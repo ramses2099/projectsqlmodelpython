@@ -110,6 +110,14 @@ class Vendor(SQLModel, table=True):
    # realiton many to may product vendor
    products: list["Product"] = Relationship(back_populates="vendors", link_model=ProductVendor)
  
+class User(SQLModel, table=True):
+   id: Optional[int] = Field(default=None, primary_key=True)
+   username:str = Field(unique = True, index=True)
+   email: str = Field(unique = True, index=True)
+   hashed_password:str  
+   update_at: Optional[datetime.datetime]
+   create_at: datetime.datetime = Field(default=datetime.datetime.now())
+   
 
     
   

@@ -1,6 +1,6 @@
 from sqlmodel import Session, select
-from database import engine, create_db_and_tables
-from model.models import *
+from db import engine, create_db_and_tables
+from models import *
 import os
 
 def select_herores() -> None:

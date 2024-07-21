@@ -9,3 +9,15 @@ Project Python with SQLModel and FastAPI
 
 # run fastapi
 fastapi dev main
+
+# project structure
+------> db
+------> models
+------> schemas
+------> services
+------> app
+
+# install module
+pip install python-jose
+pip install bcrypt
+pip install passlib
